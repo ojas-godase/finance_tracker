@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+
+      <form id="expense-form">
+        <input type="number" id="amount" placeholder="Amount" required />
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option value="Food">🍔 Food</option>
+          <option value="Transport">🚕 Transport</option>
+          <option value="Shopping">🛒 Shopping</option>
+          <option value="Entertainment">🎬 Entertainment</option>
+          <option value="Rent">🏠 Rent</option>
+          <option value="Bills">💡 Bills</option>
+          <option value="Health">🏥 Health</option>
+          <option value="Education">📚 Education</option>
+          <option value="Travel">✈️ Travel</option>
+          <option value="Groceries">🛍️ Groceries</option>
+          <option value="Investments">📈 Investments</option>
+          <option value="Savings">💰 Savings</option>
+          <option value="Gifts">🎁 Gifts</option>
+          <option value="Subscriptions">📺 Subscriptions</option>
+          <option value="Charity">❤️ Charity</option>
+          <option value="Miscellaneous">🔹 Miscellaneous</option>
+        </select>
+        <input type="date" id="date" required />
+        <input type="text" id="location" placeholder="Location (Optional)" />
+        <select id="payment-mode">
+          <option value="Cash">💵 Cash</option>
+          <option value="Credit Card">💳 Credit Card</option>
+          <option value="Debit Card">🏦 Debit Card</option>
+          <option value="UPI">📱 UPI</option>
+          <option value="Other">📌 Other</option>
+        </select>
+        <button type="submit" id="submit-btn">Add Expense</button>
+      </form>
+
+      <h2>Expenses</h2>
+      <ul id="expense-list"></ul>
+      <!-- Chatbot Section -->
+      <div id="chatbot-container">
+        <h2>Chat with Financial Assistant 🤖</h2>
+        <div id="chat-box">
+          <div id="chat-messages"></div>
+        </div>
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Ask about your expenses..."
+        />
+        <button id="send-btn">Send</button>
+      </div>
+
+      <h2>Expense Charts</h2>
+      <div id="category-pie"></div>
+      <div id="expense-trend"></div>
+      <div id="payment-mode-bar"></div>
+
+      <h2>Spending Breakdown Over Time</h2>
+      <div id="category-trend"></div>
+
+      <h2>Expense Heatmap</h2>
+      <div id="expense-heatmap"></div>
+    </div>
+  </body>
+</html>

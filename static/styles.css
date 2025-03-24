@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e0e0e0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-item {
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.expense-info {
+    flex-grow: 1;
+    overflow: hidden;
+    text-align: left;
+}
+
+.expense-actions {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+    margin-left: auto;  /* Pushes buttons to the right */
+}
+
+.edit-expense, .delete-expense {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+    min-width: 80px;
+    text-align: center;
+}
+
+.edit-expense {
+    background-color: #28a745;
+    color: white;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.delete-expense {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-expense:hover {
+    background-color: #1e7e34;
+}
+
+.delete-expense:hover {
+    background-color: #a71d2a;
+}
+
+.report-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.info{
+    margin-left: 10px;
+    align-items: center;
+    padding: 5px;
+}
+/* Chatbot Container */
+#chatbot-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ffffff, #e3f2fd);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Chat Box */
+#chat-box {
+    height: 350px;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  /* Messages */
+  .message {
+    max-width: 50%;
+    margin: 8px 0; 
+    padding: 10px;
+    border-radius: 18px;
+    font-size: 14px;
+    word-wrap: break-word;
+    display: block; 
+    clear: both; 
+  }
+  
+  /* User Message */
+  .user-message {
+    background: #d1ecf1;
+    color: #0c5460;
+    text-align: left;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+  
+  /* Bot Message */
+  .bot-message {
+    background: #d4edda;
+    color: #155724;
+    text-align: left;
+    align-self: flex-start;
+
+  }
+  
+  /* Chat Input & Button */
+  .chat-input-container {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  
+  #chat-input {
+    margin-top: 10px;
+    width: 60%;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  #send-btn {
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #send-btn:hover {
+    background: #0056b3;
+  }
+  
