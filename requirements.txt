@@ -70,7 +70,6 @@ Flask==3.1.0
 Flask-Cors==5.0.0
 flatbuffers==24.3.25
 fonttools==4.51.0
-fpdf==1.7.2
 fqdn==1.5.1
 gast==0.5.4
 gensim==4.3.2
